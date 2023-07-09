@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Frases de TMOC</title>
+
+    <style>
+      body {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        background-image: url(https://i.pinimg.com/originals/85/70/f6/8570f6339d3189c96e340d47a581d3b8.jpg);
+        font-family: "Roboto", sans-serif;
+      }
+      div {
+        background-color: #daf7c1;
+        width: 320px;
+        margin: 8px;
+        padding: 8px 18px;
+        border-radius: 14px;
+        box-shadow: 2px 2px rgba(0, 0, 0, 0.2);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      div:hover {
+        box-shadow: 4px 4px rgba(0, 0, 0, 0.4);
+        cursor: pointer;
+      }
+      img {
+        width: 40px;
+        height: 40px;
+      }
+    </style>
+  </head>
+  <body>
+    <div onclick="MandaZap(this)">
+      <p>"Cara ela está tão na sua!"</p>
+      <img
+        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQz-JMMmUMvsbZtxlmehIv35FQSszLmhAKGpg&usqp=CAU"
+      />
+    </div>
+    <div onclick="MandaZap(this)">
+      <p>"Se eu não comprar nada o desconto é maior."</p>
+      <img
+        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQz-JMMmUMvsbZtxlmehIv35FQSszLmhAKGpg&usqp=CAU"
+      />
+    </div>
+    <div onclick="MandaZap(this)">
+      <p>"Eu não preciso disso! Meu marido tem dois empregos!"</p>
+      <img
+        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQz-JMMmUMvsbZtxlmehIv35FQSszLmhAKGpg&usqp=CAU"
+      />
+    </div>
+    <div onclick="MandaZap(this)">
+      <p>"Carinha que mora logo ali, me passa um dolar!"</p>
+      <img
+        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQz-JMMmUMvsbZtxlmehIv35FQSszLmhAKGpg&usqp=CAU"
+      />
+    </div>
+    <div onclick="MandaZap(this)">
+      <p>
+        "A única coisa que aprendi com mulheres é mesmo quando você está certo,
+        você está errado!"
+      </p>
+      <img
+        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQz-JMMmUMvsbZtxlmehIv35FQSszLmhAKGpg&usqp=CAU"
+      />
+    </div>
+    <div onclick="MandaZap(this)">
+      <p>"Trágico!"</p>
+      <img
+        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQz-JMMmUMvsbZtxlmehIv35FQSszLmhAKGpg&usqp=CAU"
+      />
+    </div>
+    <div onclick="MandaZap(this)">
+      <p>"É dureza roubar a loja de armas, tem armas lá!"</p>
+      <img
+        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQz-JMMmUMvsbZtxlmehIv35FQSszLmhAKGpg&usqp=CAU"
+      />
+    </div>
+    <div onclick="MandaZap(this)">
+      <p>"Cara de quem vai aprontar!"</p>
+      <img
+        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQz-JMMmUMvsbZtxlmehIv35FQSszLmhAKGpg&usqp=CAU"
+      />
+    </div>
+    <div onclick="MandaZap(this)">
+      <p>"Sacomé!"</p>
+      <img
+        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQz-JMMmUMvsbZtxlmehIv35FQSszLmhAKGpg&usqp=CAU"
+      />
+    </div>
+    <div onclick="MandaZap(this)">
+      <p>
+        Mande umas frases aleatórias para os seus contatos!
+        https://bi7b0r.csb.app/
+      </p>
+      <img src="https://cdn-icons-png.flaticon.com/512/3536/3536445.png"
+    </div>
+    <script>
+      function MandaZap(elemento) {
+        let texto = elemento.firstElementChild.innerText;
+        let numero = prompt("Para qual número deseja enviar?");
+        let zapLink = `https://api.whatsapp.com/send?phone=55${numero}&text=${texto}`;
+
+        window.open(zapLink);
+      }
+    </script>
+  </body>
+</html>
